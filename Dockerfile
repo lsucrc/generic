@@ -12,10 +12,11 @@ ENV CONTAINER_VER ubuntu_16.04
 ENV PROCS 10
 ENV PATH /usr/local/bin:/usr/bin/:/bin:/usr/sbin:/sbin
 
+
 ENV MPICH_VER 3.1.4
 COPY mpich.sh /usr/local/bin/mpich.sh
 RUN chmod 755 /usr/local/bin/mpich.sh
-RUN mpich.sh  
+#RUN mpich.sh  
 
 ENV H5_VER 1.8.21
 COPY hdf5.sh /usr/local/bin/hdf5.sh
