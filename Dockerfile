@@ -16,6 +16,8 @@ RUN chmod 755 /usr/local/bin/env.sh
 COPY build.sh /usr/local/bin/build.sh
 RUN chmod 755 /usr/local/bin/build.sh
 
+RUN mkdir -p /workdir
+
 ENV MPICH_VER 3.1.4
 COPY mpich.sh /usr/local/bin/mpich.sh
 RUN chmod 755 /usr/local/bin/mpich.sh
