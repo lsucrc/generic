@@ -18,34 +18,34 @@ RUN chmod 755 /usr/local/bin/build.sh
 
 RUN mkdir -p /workdir
 
-ENV MPICH_VER 3.1.4
+#ENV MPICH_VER 3.1.4
 COPY mpich.sh /usr/local/bin/mpich.sh
 RUN chmod 755 /usr/local/bin/mpich.sh
 #RUN mpich.sh  
 
-ENV H5_VER 1.8.21
+#ENV H5_VER 1.8.21
 COPY hdf5.sh /usr/local/bin/hdf5.sh
 RUN chmod 755 /usr/local/bin/hdf5.sh
 #RUN hdf5.sh
 
-ENV HYPRE_VER 2.11.2
+#ENV HYPRE_VER 2.11.2
 COPY hypre.sh /usr/local/bin/hypre.sh
 RUN chmod 755 /usr/local/bin/hypre.sh
 #RUN hypre.sh
 
-ENV NHWAVE_VER 3.0
+#ENV NHWAVE_VER 3.0
 COPY nhwave.sh /usr/local/bin/nhwave.sh
 RUN chmod 755 /usr/local/bin/nhwave.sh
 #RUN nhwave.sh
 
 
-ENV SWAN_V1 41
-ENV SWAN_V2 20
+#ENV SWAN_V1 41
+#ENV SWAN_V2 20
 COPY swan.sh /usr/local/bin/swan.sh
 RUN chmod 755 /usr/local/bin/swan.sh
 #RUN swan.sh
 
-ENV OPENFOAM_VER 1806
+#ENV OPENFOAM_VER 1806
 ENV USER root
 COPY openfoam.sh /usr/local/bin/openfoam.sh
 RUN chmod 755 /usr/local/bin/openfoam.sh
