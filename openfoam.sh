@@ -5,7 +5,7 @@ source /usr/local/bin/env.sh
 if [ "$OPENFOAM_VER" != "" ]
 then
     echo "BUILDING OPENFOAM: Version $OPENFOAM_VER"
-    export BASE_DIR="$HOME/dep-mpich$MPICH_VER"
+    export BASE_DIR="$HOME/${CONTAINER_VER}/dep-mpich$MPICH_VER"
     mkdir -p $BASE_DIR
     cd $BASE_DIR
     curl -kLO https://sourceforge.net/projects/openfoamplus/files/v${OPENFOAM_VER}/OpenFOAM-v${OPENFOAM_VER}.tgz

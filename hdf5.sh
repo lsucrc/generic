@@ -7,8 +7,8 @@ fi
 export H5_HOME="$HOME/${CONTAINER_VER}/dep-mpich${MPICH_VER}/h5-${H5_VER}"
 if [ ! -d $H5_HOME ]
 then
-  mkdir -p $HOME/build
-  cd $HOME/build
+  mkdir -p /work/funwave/build
+  cd /work/funwave/build
   A=$(echo $H5_VER|cut -d. -f1)
   B=$(echo $H5_VER|cut -d. -f2)
   C=$(echo $H5_VER|cut -d. -f3)
