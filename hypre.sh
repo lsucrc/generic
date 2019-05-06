@@ -14,8 +14,8 @@ then
     #then
     #    echo "Please do a build run"
     #fi
-    mkdir -p /work/funwave/build
-    cd /work/funwave/build
+    mkdir -p /workdir/build
+    cd /workdir/build
     if [ ! -r hypre-$HYPRE_VER.tar.gz ]
     then
       curl -kLO https://computation.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods/download/hypre-$HYPRE_VER.tar.gz

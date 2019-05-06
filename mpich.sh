@@ -10,8 +10,8 @@ then
     then
         echo "Please do a build run"
     fi
-    mkdir -p /work/funwave/build
-    cd /work/funwave/build
+    mkdir -p /workdir/build
+    cd /workdir/build
     if [ ! -r mpich-$MPICH_VER.tar.gz ]
     then
       curl -kLO http://www.mpich.org/static/downloads/$MPICH_VER/mpich-$MPICH_VER.tar.gz
