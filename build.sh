@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /inputdir
 source env_setting.txt
 
 echo "START BUILDING"
