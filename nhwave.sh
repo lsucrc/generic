@@ -2,7 +2,7 @@
 
 source /usr/local/bin/env.sh 
 
-export HYPRE_HOME="${HOME}/${CONTAINER_VER}/hypre${HYPRE_VER}"
+export HYPRE_HOME="/work/funwave/${CONTAINER_VER}/hypre${HYPRE_VER}"
 
 if [ "$NHWAVE_VER" != "" ]
 then
@@ -10,7 +10,7 @@ then
     echo "BUILDING NHWAVE: Version $NHWAVE_VER"
 
     # download swan source code and extract it 
-    export BASE_DIR="$HOME/$CONTAINER_VER/nhwave$NHWAVE_VER"
+    export BASE_DIR="/work/funwave/$CONTAINER_VER/nhwave$NHWAVE_VER"
     mkdir -p $BASE_DIR
     cd $BASE_DIR
     #curl -kLO http://downloads.sourceforge.net/project/swanmodel/swan/${SWAN_V1}.${SWAN_V2}/swan${SWAN_VER}.tar.gz

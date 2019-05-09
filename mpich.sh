@@ -3,7 +3,7 @@ then
    echo "Please specify the MPICH version using MPICH_VER" 
    exit 2
 fi
-export MPICH_HOME="${HOME}/${CONTAINER_VER}/mpich${MPICH_VER}"
+export MPICH_HOME="/work/funwave/${CONTAINER_VER}/mpich${MPICH_VER}"
 if [ ! -x "${MPICH_HOME}/bin/mpirun" ]
 then
     if [ "${BUILD}" != "yes" ]
