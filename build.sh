@@ -1,7 +1,8 @@
 #!/bin/bash
 cd /inputdir
 source env_setting.txt
-mkdir -p /work/funwave/${CONTAINER_VER}
+mkdir -p /workdir/${CONTAINER_VER}
+mkdir -p /workdir/build
 
 echo "START BUILDING"
 if [ "$MPICH_VER" != "" ]

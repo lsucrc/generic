@@ -3,14 +3,13 @@ then
    echo "Please specify the MPICH version using MPICH_VER" 
    exit 2
 fi
-export MPICH_HOME="/work/funwave/${CONTAINER_VER}/mpich${MPICH_VER}"
+export MPICH_HOME="/workdir/${CONTAINER_VER}/mpich${MPICH_VER}"
 if [ ! -x "${MPICH_HOME}/bin/mpirun" ]
 then
     if [ "${BUILD}" != "yes" ]
     then
         echo "Please do a build run"
     fi
-    mkdir -p /workdir/build
     cd /workdir/build
     if [ ! -r mpich-$MPICH_VER.tar.gz ]
     then

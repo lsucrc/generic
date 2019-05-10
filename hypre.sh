@@ -7,14 +7,13 @@ then
    echo "Please specify the HYPRE version using $HYPRE_VER" 
    exit 2
 fi
-export HYPRE_HOME="/work/funwave/${CONTAINER_VER}/hypre${HYPRE_VER}"
+export HYPRE_HOME="/workdir/${CONTAINER_VER}/hypre${HYPRE_VER}"
 if [ ! -d ${HYPRE_HOME} ]
 then
     #if [ "${BUILD}" != "yes" ]
     #then
     #    echo "Please do a build run"
     #fi
-    mkdir -p /workdir/build
     cd /workdir/build
     if [ ! -r hypre-$HYPRE_VER.tar.gz ]
     then

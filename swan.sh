@@ -12,8 +12,8 @@ then
     export SWAN_VER="${SWAN_V1}${SWAN_V2}"
     echo "BUILDING SWAN: Version $SWAN_VER"
     # download swan source code and extract it 
-    export BASE_DIR="/work/funwave/$CONTAINER_VER/dep-mpich$MPICH_VER"
-    export SWAN_DIR="/work/funwave/$CONTAINER_VER/dep-mpich$MPICH_VER/swan${SWAN_VER}"
+    export BASE_DIR="/workdir/$CONTAINER_VER/dep-mpich$MPICH_VER"
+    export SWAN_DIR="/workdir/$CONTAINER_VER/dep-mpich$MPICH_VER/swan${SWAN_VER}"
     mkdir -p $BASE_DIR
     cd $BASE_DIR
     if [ ! -r swan${SWAN_VER}.tar.gz ]
