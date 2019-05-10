@@ -29,7 +29,7 @@ then
    source /usr/local/bin/nhwave.sh
 fi
 
-if [ "$SWAN_V1" != "" ]
+if [ "$SWAN_VER" != "" ]
 then
    echo "INSTALLING SWAN"
    source /usr/local/bin/swan.sh
@@ -40,6 +40,13 @@ then
    echo "INSTALLING OPENFOAM"
    source /usr/local/bin/openfoam.sh
 fi
+
+if [ "$Funwave_tvd_VER" != "" ]
+then
+   echo "INSTALLING FUNWAVE-TVD"
+   source /usr/local/bin/funwave-tvd.sh
+fi
+
 
 source /usr/local/bin/env.sh
    

@@ -46,6 +46,10 @@ COPY swan.sh /usr/local/bin/swan.sh
 RUN chmod 755 /usr/local/bin/swan.sh
 #RUN swan.sh
 
+COPY funwave-tvd.sh /usr/local/bin/funwave-tvd.sh
+RUN chmod 755 /usr/local/bin/funwave-tvd.sh
+
+
 #ENV OPENFOAM_VER 1806
 ENV USER root
 COPY openfoam.sh /usr/local/bin/openfoam.sh
