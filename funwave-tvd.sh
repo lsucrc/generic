@@ -14,7 +14,7 @@ then
         git clone https://github.com/fengyanshi/FUNWAVE-TVD/archive/Version_$Funwave_tvd_VER.tar.gz
     fi
     rm -fr FUNWAVE-TVD-Version_$Funwave_tvd_VER 
-    tar xvf Version_$Funwave_tvd_VER.tar.gz
+    tar xzf Version_$Funwave_tvd_VER.tar.gz
     cd FUNWAVE-TVD-Version_$Funwave_tvd_VER/src 
     perl -p -i -e 's/FLAG_8 = -DCOUPLING/#$&/' Makefile
     
