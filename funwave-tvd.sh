@@ -11,7 +11,7 @@ then
     cd $BASE_DIR
     if [ ! -r Version_$FUNWAVE_TVD_VER.tar.gz ] 
     then
-        git clone https://github.com/fengyanshi/FUNWAVE-TVD/archive/Version_$FUNWAVE_TVD_VER.tar.gz
+        curl -kLO https://github.com/fengyanshi/FUNWAVE-TVD/archive/Version_$FUNWAVE_TVD_VER.tar.gz
     fi
     rm -fr FUNWAVE-TVD-Version_$FUNWAVE_TVD_VER
     tar xzf Version_$FUNWAVE_TVD_VER.tar.gz
