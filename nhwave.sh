@@ -10,14 +10,11 @@ then
     echo "BUILDING NHWAVE: Version $NHWAVE_VER"
 
     # download swan source code and extract it 
-    export BASE_DIR="/workdir/$CONTAINER_VER/nhwave$NHWAVE_VER"
+    export BASE_DIR="/workdir/$CONTAINER_VER/dep-mpich$MPICH_VER/dep-hypre$HYPRE__VER"
     mkdir -p $BASE_DIR
     cd $BASE_DIR
-    #curl -kLO http://downloads.sourceforge.net/project/swanmodel/swan/${SWAN_V1}.${SWAN_V2}/swan${SWAN_VER}.tar.gz
     git clone https://github.com/JimKirby/NHWAVE.git
-    #tar xzf swan${SWAN_VER}.tar.gz
 
-    # compile swan 
     cd NHWAVE/src
     mv Makefile.supermic.mpif90 Makefile
     sed -i 's/DEF_FLAGS     = -P -C -traditional/            DEF_FLAGS     = -P -traditional/' Makefile

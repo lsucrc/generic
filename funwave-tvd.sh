@@ -5,9 +5,9 @@ source /usr/local/bin/env.sh
 if [ "$FUNWAVE_TVD_VER" != "" ]
 then
     echo "BUILDING FUNWAVE-TVD: Version $FUNWAVE_TVD_VER"
-
-    export BASE_DIR="/workdir/$CONTAINER_VER/funwave-tvd$FUNWAVE_TVD_VER"
-    mkdir -p $BASE_DIR
+    export BASE_DIR="/workdir/${CONTAINER_VER}/dep-mpich$MPICH_VER"
+    export F_TVD_DIR="/workdir/${CONTAINER_VER}/dep-mpich$MPICH_VER/funwave-tvd$FUNWAVE_TVD_VER"
+    mkdir -p $BASE_DIR 
     cd $BASE_DIR
     if [ ! -r Version_$FUNWAVE_TVD_VER.tar.gz ] 
     then
