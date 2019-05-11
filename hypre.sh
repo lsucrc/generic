@@ -7,7 +7,7 @@ then
    echo "Please specify the HYPRE version using $HYPRE_VER" 
    exit 2
 fi
-export HYPRE_HOME="/workdir/${CONTAINER_VER}/hypre${HYPRE_VER}"
+export HYPRE_HOME="/workdir/${CONTAINER_VER}/dep-mpich$MPICH_VER/hypre${HYPRE_VER}"
 if [ ! -d ${HYPRE_HOME} ]
 then
     #if [ "${BUILD}" != "yes" ]
