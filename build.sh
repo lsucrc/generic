@@ -41,7 +41,7 @@ then
    source /usr/local/bin/openfoam.sh
 fi
 
-if [ "$Funwave_tvd_VER" != "" ]
+if [ "$FUNWAVE_TVD_VER" != "" ]
 then
    echo "INSTALLING FUNWAVE-TVD"
    source /usr/local/bin/funwave-tvd.sh
