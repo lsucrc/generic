@@ -2,7 +2,7 @@
 
 source /usr/local/bin/env.sh 
 
-export HYPRE_HOME="/workdir/${CONTAINER_VER}/hypre${HYPRE_VER}"
+export HYPRE_HOME="/workdir/${CONTAINER_VER}/dep-mpich$MPICH_VER/hypre${HYPRE_VER}"
 
 if [ "$NHWAVE_VER" != "" ]
 then
